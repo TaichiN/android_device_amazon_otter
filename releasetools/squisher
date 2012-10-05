@@ -99,7 +99,7 @@ REALDATE=`date -u +%Y%m%d`
 
 if [ -f $ANDROID_BUILD_TOP/vendor/cm/LICENSE ];
 then
-MODVERSION=`sed -n -e'/ro\.cm\.version/s/^.*=//p' $REPACK/ota/system/build.prop`
+MODVERSION=`sed -n -e'/ro\.modversion/s/^.*=//p' $REPACK/ota/system/build.prop`
 MODVERSION=`echo $MODVERSION | sed -r 's/CyanogenMod-//'`
 OUTFILE=$OUT/CM$MODVERSION.zip
 echo MODVERSION: $MODVERSION
