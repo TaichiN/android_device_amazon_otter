@@ -234,8 +234,8 @@ static void omap_power_hint(struct power_module *module, power_hint_t hint, void
                         ALOGE("Error writing to %s: %s\n", BOOSTPULSE_PATH, buf);
                     }
                 }
-            } else
-                ALOGD("%s boostpulse not supported", governor);
+            }/* else
+                ALOGD("%s boostpulse not supported", governor);*/
         }
         break;
 
