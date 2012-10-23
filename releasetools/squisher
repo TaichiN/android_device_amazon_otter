@@ -4,10 +4,10 @@
 # cyanogen w/ AOKP changes
 #
 
-echo -e $CL_GRN"OTTER SQUISHER:"$CL_RST;
-echo -e $CL_GRN"================"$CL_RST;
-
 . $ANDROID_BUILD_TOP/vendor/cm/tools/functions
+
+echo -e $CL_CYN"OTTER SQUISHER:"$CL_RST;
+echo -e $CL_CYN"================"$CL_RST;
 
 OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
