@@ -22,4 +22,7 @@
     <!-- Disable Volume rocker music controls support. -->
     <bool name="config_show_volumeRockerMusicCtrl">false</bool>
 
+    <!-- Show Expanded Desktop preference -->
+    <bool name="config_show_expandedDesktop">true</bool>
+
 </resources>
