@@ -2,6 +2,7 @@
 # Setup device specific product configuration.
 #
 
+# Bootanimation
 TARGET_BOOTANIMATION_NAME := 600
 
 # Inherit some common cyanogenmod stuff.
@@ -24,4 +25,4 @@ PRODUCT_RELEASE_NAME := KFire
 PRODUCT_PACKAGES += \
     su \
 
-CM_EXTRAVERSION := SUKIYAKI
+CM_EXTRAVERSION := ZEN

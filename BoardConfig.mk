@@ -16,7 +16,6 @@ ENHANCED_DOMX := true
 # Use the non-open-source parts, if they're present
 -include vendor/amazon/otter/BoardConfigVendor.mk
 
-
 # Processor
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -143,7 +142,6 @@ ifdef OMAP_ENHANCEMENT_MULTIGPU
     COMMON_GLOBAL_CFLAGS += -DOMAP_ENHANCEMENT_MULTIGPU
 endif
 
-
 # Misc.
 BOARD_NEEDS_CUTILS_LOG := true
 BOARD_USES_SECURE_SERVICES := true
@@ -159,4 +157,3 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 # Bootanimation
 TARGET_BOOTANIMATION_PRELOAD := true
-

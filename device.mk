@@ -27,10 +27,8 @@ else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
-
 
 # Hardware HALs
 PRODUCT_PACKAGES += \
@@ -171,5 +169,3 @@ $(call inherit-product-if-exists, vendor/amazon/otter/proprietary/imgtec/sgx-img
 $(call inherit-product-if-exists, vendor/amazon/otter/otter-vendor.mk)
 $(call inherit-product-if-exists, hardware/ti/omap4xxx/omap4.mk)
 $(call inherit-product-if-exists, device/ti/proprietary-open/wl12xx/wlan/wl12xx-wlan-fw-products.mk)
-
-
