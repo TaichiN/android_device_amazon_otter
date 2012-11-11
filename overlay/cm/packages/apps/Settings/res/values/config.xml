@@ -25,4 +25,6 @@
     <!-- Show Expanded Desktop preference -->
     <bool name="config_show_expandedDesktop">true</bool>
 
+    <!-- Disable Volume key cursor control support. -->
+    <bool name="config_show_volumeKeyCursorCtrl">false</bool>
 </resources>
