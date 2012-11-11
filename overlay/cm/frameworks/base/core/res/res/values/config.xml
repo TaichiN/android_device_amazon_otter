@@ -133,4 +133,6 @@
          kill the foreground app. -->
     <integer name="config_backKillTimeout">1500</integer>
 
+    <!-- Boolean to enable Volume key cursor control -->
+    <bool name="config_volumeKeyCursorCtrl">false</bool>
 </resources>
