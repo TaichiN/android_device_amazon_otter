@@ -19,12 +19,9 @@
     <!-- Disable Volume rocker wake support. -->
     <bool name="config_show_volumeRockerWake">false</bool>
 
-    <!-- Disable Volume rocker music controls support. -->
-    <bool name="config_show_volumeRockerMusicCtrl">false</bool>
-
     <!-- Show Expanded Desktop preference -->
     <bool name="config_show_expandedDesktop">true</bool>
 
-    <!-- Disable Volume key cursor control support. -->
-    <bool name="config_show_volumeKeyCursorCtrl">false</bool>
+    <!-- Disable Volume rocker support. -->
+    <bool name="has_volume_rocker">false</bool>
 </resources>
