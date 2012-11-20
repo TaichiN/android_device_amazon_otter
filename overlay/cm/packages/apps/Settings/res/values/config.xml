@@ -24,4 +24,8 @@
 
     <!-- Disable Volume rocker support. -->
     <bool name="has_volume_rocker">false</bool>
+
+    <!-- Disable Bluetooth support. -->
+    <bool name="has_bluetooth_chip">false</bool>
+
 </resources>
