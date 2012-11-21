@@ -15,7 +15,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- Disable Volume rocker wake support. -->
     <bool name="config_show_volumeRockerWake">false</bool>
 
@@ -24,8 +23,4 @@
 
     <!-- Disable Volume rocker support. -->
     <bool name="has_volume_rocker">false</bool>
-
-    <!-- Disable Bluetooth support. -->
-    <bool name="has_bluetooth_chip">false</bool>
-
 </resources>

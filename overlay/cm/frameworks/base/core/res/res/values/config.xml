@@ -132,4 +132,7 @@
     <!-- Timeout in MS for how long you have to long-press the back key to
          kill the foreground app. -->
     <integer name="config_backKillTimeout">1500</integer>
+
+    <!-- Bluetooth support. Some devices does not have bluetooth chip. -->
+    <bool name="config_deviceHasBluetooth">false</bool>
 </resources>
