@@ -16,11 +16,14 @@ ENHANCED_DOMX := true
 # Use the non-open-source parts, if they're present
 -include vendor/amazon/otter/BoardConfigVendor.mk
 
+# Default values, if not overridden else where.
+TARGET_BOARD_INFO_FILE := device/amazon/otter/board-info.txt
 
 # Processor
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
@@ -33,7 +36,6 @@ TARGET_BOARD_PLATFORM := omap4
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := otter
 TARGET_OTA_ASSERT_DEVICE := blaze
-TARGET_BOARD_INFO_FILE := device/amazon/otter/board-info.txt
 #TARGET_PROVIDES_INIT_RC := true
 BOARD_HAS_SDCARD_INTERNAL := true
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/platform/omap/omap_hsmmc.1/by-name/media
