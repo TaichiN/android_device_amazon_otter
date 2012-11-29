@@ -44,7 +44,6 @@ BOARD_SDCARD_DEVICE_INTERNAL := /dev/block/platform/omap/omap_hsmmc.1/by-name/me
 # Kernel Build
 TARGET_KERNEL_SOURCE := kernel/amazon/otter
 TARGET_KERNEL_CONFIG := otter_android_defconfig
-TARGET_PREBUILT_KERNEL := device/amazon/otter/kernel
 
 WLAN_MODULES:
 	make clean -C hardware/ti/wlan/mac80211/compat_wl12xx

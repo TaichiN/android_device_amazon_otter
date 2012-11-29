@@ -21,16 +21,8 @@
 
 DEVICE_FOLDER := device/amazon/otter
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := $(DEVICE_FOLDER)/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
-
 
 # Hardware HALs
 PRODUCT_PACKAGES += \
@@ -71,10 +63,8 @@ PRODUCT_PACKAGES += \
 # Apps
 PRODUCT_PACKAGES += \
     OtterParts \
-    FileManager \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
     $(DEVICE_FOLDER)/root/default.prop:/root/default.prop \
     $(DEVICE_FOLDER)/root/init.omap4430.rc:/root/init.omap4430.rc \
     $(DEVICE_FOLDER)/root/init.omap4430.usb.rc:/root/init.omap4430.usb.rc \
