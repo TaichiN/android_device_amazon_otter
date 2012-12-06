@@ -18,6 +18,7 @@ ENHANCED_DOMX := true
 
 # Default values, if not overridden else where.
 TARGET_BOARD_INFO_FILE := device/amazon/otter/board-info.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/amazon/otter/bluetooth
 
 # Processor
 TARGET_CPU_ABI := armeabi-v7a
@@ -44,6 +45,7 @@ BOARD_SDCARD_DEVICE_INTERNAL := /dev/block/platform/omap/omap_hsmmc.1/by-name/me
 # Kernel Build
 TARGET_KERNEL_SOURCE := kernel/amazon/otter
 TARGET_KERNEL_CONFIG := otter_android_defconfig
+TARGET_PREBUILT_KERNEL := device/amazon/otter/kernel
 
 WLAN_MODULES:
 	make clean -C hardware/ti/wlan/mac80211/compat_wl12xx
@@ -106,7 +108,7 @@ TARGET_RECOVERY_PRE_COMMAND := "idme postmode 1;"
 # adb has root
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 
-TARGET_SPECIFIC_HEADER_PATH := device/amazon/otter/src-headers
+#TARGET_SPECIFIC_HEADER_PATH := device/amazon/otter/src-headers
 
 ifdef ENHANCED_DOMX
     COMMON_GLOBAL_CFLAGS += -DENHANCED_DOMX
@@ -144,7 +146,6 @@ ifdef OMAP_ENHANCEMENT_MULTIGPU
     COMMON_GLOBAL_CFLAGS += -DOMAP_ENHANCEMENT_MULTIGPU
 endif
 
-
 # Misc.
 BOARD_NEEDS_CUTILS_LOG := true
 BOARD_USES_SECURE_SERVICES := true
@@ -160,4 +161,3 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 # Bootanimation
 TARGET_BOOTANIMATION_PRELOAD := true
-

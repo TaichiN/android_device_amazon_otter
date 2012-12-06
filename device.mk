@@ -21,6 +21,12 @@
 
 DEVICE_FOLDER := device/amazon/otter
 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := $(DEVICE_FOLDER)/kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
@@ -50,7 +56,6 @@ PRODUCT_PACKAGES += \
     hwprops \
     evtest \
     libjni_pinyinime \
-    make_ext4fs \
     setup_fs \
     busybox \
 
@@ -65,6 +70,7 @@ PRODUCT_PACKAGES += \
     OtterParts \
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel \
     $(DEVICE_FOLDER)/root/default.prop:/root/default.prop \
     $(DEVICE_FOLDER)/root/init.omap4430.rc:/root/init.omap4430.rc \
     $(DEVICE_FOLDER)/root/init.omap4430.usb.rc:/root/init.omap4430.usb.rc \
@@ -162,5 +168,3 @@ $(call inherit-product-if-exists, vendor/amazon/otter/proprietary/imgtec/sgx-img
 $(call inherit-product-if-exists, vendor/amazon/otter/otter-vendor.mk)
 $(call inherit-product-if-exists, hardware/ti/omap4xxx/omap4.mk)
 $(call inherit-product-if-exists, device/ti/proprietary-open/wl12xx/wlan/wl12xx-wlan-fw-products.mk)
-
-
