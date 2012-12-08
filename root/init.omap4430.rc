@@ -72,7 +72,6 @@ on post-fs
     write /sys/devices/system/cpu/cpufreq/interactive/boost_timeout 30000000
     write /sys/devices/system/cpu/cpu0/cpufreq/boost_cpufreq 1
 
-
 # change permissions for ION driver
     chmod 0777 /dev/ion
 
@@ -82,7 +81,6 @@ on post-fs
 
 # add symlink for HDCP key
 #   symlink /factory/hdcp.keys /system/vendor/firmware/hdcp.key
-
 
 # change permissions for Sensors
     chown system system /sys/devices/virtual/input/input0/mode
