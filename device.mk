@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
     $(DEVICE_FOLDER)/root/default.prop:/root/default.prop \
-    $(DEVICE_FOLDER)/root/init.rc.cm10:/root/init.rc.cm10 \
+    $(DEVICE_FOLDER)/root/init.rc.cm10:/root/init.otter.rc \
     $(DEVICE_FOLDER)/root/init.omap4430.rc:/root/init.omap4430.rc \
     $(DEVICE_FOLDER)/root/init.omap4430.usb.rc:/root/init.omap4430.usb.rc \
     $(DEVICE_FOLDER)/root/ueventd.omap4430.rc:/root/ueventd.omap4430.rc \
