@@ -1,3 +1,4 @@
+
 /dev/pvrsrvkm             0666   system     system
 /dev/video0               0666   system     camera
 /dev/video1               0666   system     camera
