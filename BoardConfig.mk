@@ -5,13 +5,13 @@ USE_CAMERA_STUB := true
 BOARD_HAVE_BLUETOOTH := false
 TI_OMAP4_CAMERAHAL_VARIANT := false
 
-#OMAP_ENHANCEMENT := true
+OMAP_ENHANCEMENT := true
 #OMAP_ENHANCEMENT_BURST_CAPTURE := true
 #OMAP_ENHANCEMENT_S3D := true
 #OMAP_ENHANCEMENT_CPCAM := true
 #OMAP_ENHANCEMENT_VTC := true
 OMAP_ENHANCEMENT_MULTIGPU := true
-#ENHANCED_DOMX := true
+ENHANCED_DOMX := true
 
 # Use the non-open-source parts, if they're present
 -include vendor/amazon/otter/BoardConfigVendor.mk
