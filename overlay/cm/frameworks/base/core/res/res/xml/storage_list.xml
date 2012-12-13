@@ -35,7 +35,5 @@
 <StorageList xmlns:android="http://schemas.android.com/apk/res/android">
     <storage
         android:storageDescription="@string/storage_internal"
-        android:emulated="true"
-        android:mtpReserve="100"
-        android:primary="true" />
+        android:emulated="true" />
 </StorageList>
