@@ -1,4 +1,5 @@
 PRODUCT_VENDOR_KERNEL_HEADERS := device/amazon/otter/kernel-headers
+TARGET_SPECIFIC_HEADER_PATH := device/amazon/otter/src-headers
 
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
@@ -78,7 +79,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_
 # Connectivity - Wi-Fi
 USES_TI_MAC80211 := true
 ifdef USES_TI_MAC80211
-WPA_SUPPLICANT_VERSION           := VER_0_8_X
+WPA_SUPPLICANT_VERSION           := VER_0_8_X_TI
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wl12xx
 BOARD_HOSTAPD_DRIVER             := NL80211
