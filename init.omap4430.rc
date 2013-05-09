@@ -145,9 +145,6 @@ on post-fs-data
 # mount system ro
     mount ext4 /dev/block/mmcblk0p9 /system ro remount
 
-# symlink egl.cfg
-    symlink /sys/egl/egl.cfg /system/lib/egl/egl.cfg
-
 # wifi
     mkdir /data/misc/wifi 0770 wifi wifi
     mkdir /data/misc/wifi/sockets 0770 wifi wifi
