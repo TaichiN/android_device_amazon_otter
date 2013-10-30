@@ -37,8 +37,9 @@ on init
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
 
 
-# compatibility w/ 2.6 kernels
-    symlink /dev/block/platform/omap/omap_hsmmc.1 /dev/block/platform/mmci-omap-hs.1
+# compatibility w/ 2.6 kernels & 3.0 kernels
+    symlink /dev/block/platform /dev/block/platform/omap
+    symlink /dev/block/platform/omap_hsmmc.1 /dev/block/platform/mmci-omap-hs.1
 
 on boot
 
