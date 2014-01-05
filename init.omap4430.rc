@@ -88,6 +88,10 @@ on fs
     chown system system /sys/class/power_supply/usb/device/float_voltage
     chown system system /sys/class/power_supply/usb/device/bad_battery
 
+    # activate zram
+    swapon_all fstab.otter
+    write /proc/sys/vm/page-cluster 0
+
 on post-fs
     chmod 0666 /dev/pvrsrvkm
 
